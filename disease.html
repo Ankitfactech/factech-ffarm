@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+      <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+          </script>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+          
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    . <div class="testimonial_box">
+
+    </div>
+    <style> 
+    .testimonial_box {
+    width: 50%;
+    height: 440px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 4px solid black;
+    padding: 50px 30px 50px 30px;
+    border-radius: 20px;
+}
+    </style>
+    <div class="container">
+      <h1 class="form-title">Crop Yield Prediction </h1>
+      <form action="/predict" method="post">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <div class="state1">
+                <label for="inputState">Select crop </label>
+                <div class="user-input-box">
+                                        <select class="form-control" name="season"id="inputState">
+                                           
+                                                            <option value="">Select crop </option>
+                                                            <option value="Andra Pradesh">potato</option>
+                                                            <option value="Arunachal Pradesh">Tomato</option>
+                                                            <option value="Assam">onion</option>
+                                                            <option value="Assam">caroot</option>
+                                                            <option value="Assam">pulse</option>
+                                                            <select>
+                  </div>
+            
+                  
+                <!-- <select class="form-control" name="state" id="inputState">
+                   
+                                    <option value="SelectState">Select State</option>
+                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Orissa">Orissa</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttaranchal">Uttaranchal</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadeep">Lakshadeep</option>
+                                    <option value="Pondicherry">Pondicherry</option>
+                                  </select>
+                                </div> -->
+          <!-- <div class="user-input-box">
+            <label for="username">district</label>
+            <div class="form-groupcol-md-4">
+                <label for="inputDistrict"></label>
+                <select class="form-control" name="district" id="inputDistrict">
+                    <option value="">-- select one -- </option>
+                </select>
+              </div>
+          </div>
+          <div class="user-input-box">
+            <label for="Season">Season</label>
+                                <select class="form-control" name="season"id="inputState">
+                                   
+                                                    <option value="">Select Season</option>
+                                                    <option value="Andra Pradesh">Whole year</option>
+                                                    <option value="Arunachal Pradesh">Summer</option>
+                                                    <option value="Assam">Winter</option>
+                                                    <option value="Assam">Rabi</option>
+                                                    <option value="Assam">Kharif</option>
+                                                    <select>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Start Year</label>
+            <input type="text"
+                    name="start"
+                    placeholder="Enter Start year"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">End Year</label>
+            <input type="text"
+                    name="end"
+                    placeholder="Enter End Year"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Area</label>
+            <input type="Text"
+                    name="area"
+                    placeholder="Enter Area"/>
+          </div>
+        </div> -->
+        <div class="ankit">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    </div>
+        
+            <button type ="submit" class="btn1" onmouseenter="openpopup()">Predict disease</button>
+            <style>
+                .btn1{
+                    font-weight: 400;
+                    font-size: 18px;
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 10px;
+                    color: blue;
+                }
+                </style>
+        </form>
+        <div class="popup" id="popup">
+            <img src="/static/images/bb.png" alt="Fatech_farm">
+            <h2> Prediction </h2>
+            <p> {{prediction}}</p>
+            <button type="button" onclick="closepopup()"> Thanks</button>
+        </div>   
+    </div>
+    
+  </body>
+</html>
